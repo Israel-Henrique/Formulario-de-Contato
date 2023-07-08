@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-color: #27282D;
+}
+
+.form{
+    text-align: center;
+    padding: 20px;
+}
+
+.form img{
+    /*text-align: center;*/
+    max-width: 500px;
+    width: 100%;
+}
+/*Como que o display:block, sem o margin:auto, fica colado no canto, sem 
+obedecer o text-align?*/
+
+/*Ah, foi erro do carinha lá, que botou mil e uma coisa para remendar e só
+percebeu no final. Melhor assistir tudo primeiro para evitar me enbananar com
+ele. No final, nem precisa do text-align, exceto para a imagem.*/
+
+/*Por alguma razão a imagem só obedece o text-align se tiver no .form*/
+
+/*Por que raios preciso especificar o type do input para aplicar alterações
+específicas? Seria para não afetar o type submit?*/
+
+.form input[type=email], 
+.form input[type=text]{
+    padding-left: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+/*Seria melhor usar variáveis para reaproveitar os atributos supracitados*/
+
+.form textarea{
+    resize: vertical;
+    margin: 10px auto;
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    height: 120px;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.form input[type=submit]{
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    margin: 10px auto;
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 20px;
+
+}
